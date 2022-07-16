@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 
 [PluginMain("Ptrarc")]
 public class Ptrarc : IPluginInitializer {
-    public string Introduction => "Functional plugin for SourceLand";
+    public string Introduction => "用于 源域服务器群 的功能插件";
     public Dictionary<string, string> MetaData => new();
     public Version Version => new(1, 0, 0);
     public void OnInitialize() {
