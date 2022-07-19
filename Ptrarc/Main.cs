@@ -26,7 +26,7 @@ internal delegate void Hide_Seed_HookDelegate(IntPtr a1, IntPtr a2);
 internal class Hide_Seed_Hook : THookBase<Hide_Seed_HookDelegate> {
     public override Hide_Seed_HookDelegate Hook =>
         (IntPtr a1, IntPtr a2) => {
-            Marshal.WriteInt32(HookAPI.dAccess(a1, 48), 0);
+            Marshal.WriteInt64(a1, 48, 0);
             Original(a1, a2);
         };
 }
